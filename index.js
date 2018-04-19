@@ -20,17 +20,24 @@ function nowServing(deliLine)
 
 function currentLine(deliLine)
 {
-  var line = 'The line is currently:'
-  for (let i = 0; i < deliLine.length; i++)
+  if (deliLine.length > 0)
   {
-    if (i < deliLine.length - 1)
+    var line = 'The line is currently:'
+    for (let i = 0; i < deliLine.length; i++)
     {
-      line += ` ${i + 1}. ${deliLine[i]},`
+      if (i < deliLine.length - 1)
+      {
+        line += ` ${i + 1}. ${deliLine[i]},`
+      }
+      else
+      {
+        line += ` ${i + 1}. ${deliLine[i]}`
+      }
     }
-    else
-    {
-      line += ` ${i + 1}. ${deliLine[i]}`
-    }
+    return line
   }
-  return line
+  else
+  {
+    return 'The line is currently empty.'
+  }
 }
