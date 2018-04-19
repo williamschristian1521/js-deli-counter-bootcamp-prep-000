@@ -20,9 +20,9 @@ function nowServing(deliLine)
 
 function currentLine(deliLine)
 {
-  var array = []
+  var array = ''
   for (let i = 0; i < deliLine.length; i++)
   {
-    array 
+    array += `${i}. ${deliLine[i]}, `
   }
 }
