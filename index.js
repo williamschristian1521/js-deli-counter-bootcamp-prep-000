@@ -14,6 +14,6 @@ function nowServing()
   }
   else
   {
-    return 'There is nobody wa'
+    return 'There is nobody waiting to be served!'
   }
 }
