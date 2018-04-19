@@ -5,3 +5,14 @@ function takeANumber(katzDeliLine, newPerson)
 }
 
 function nowServing()
+{
+  if (katzDeliLine.length > 0)
+  {
+    var person = katzDeliLine[0]
+    katzDeliLine.unshift()
+  }
+  else
+  {
+    
+  }
+}
