@@ -14,6 +14,6 @@ function nowServing()
   }
   else
   {
-    return 
+    return 'There is nobody wa'
   }
 }
