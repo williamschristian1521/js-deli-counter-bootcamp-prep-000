@@ -9,10 +9,11 @@ function nowServing()
   if (katzDeliLine.length > 0)
   {
     var person = katzDeliLine[0]
-    katzDeliLine.unshift()
+    katzDeliLine.shift()
+    return person
   }
   else
   {
-    
+    return 
   }
 }
