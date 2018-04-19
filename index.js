@@ -4,12 +4,12 @@ function takeANumber(katzDeliLine, newPerson)
   return `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`
 }
 
-function nowServing()
+function nowServing(deliLine)
 {
-  if (katzDeliLine.length > 0)
+  if (deliLine.length > 0)
   {
     var person = katzDeliLine[0]
-    katzDeliLine.shift()
+    deliLine.shift()
     return `Current serving ${person}.`
   }
   else
